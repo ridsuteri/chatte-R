@@ -10,6 +10,27 @@ const io = socketio(server);
 // Set static folder
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Run when user connects
+io.on('connection', socket => {
+    // console.log('new connection');
+
+    // welcome for current user
+    socket.emit('message', 'Welcome to Chatte-R');
+
+    // broadcast when new user connects
+    socket.broadcast.emit('message', 'A user has joined the chat');
+
+    // when user disconnects
+    socket.on('disconnect', () => {
+        io.emit('message', 'A user has left the chat');
+    });
+
+    // Listen for chatMessage
+    socket.on('chatMessage', (msg) => {
+        // console.log(msg);
+        io.emit('message', msg);
+    });
+});
 
 const PORT = process.env.PORT || 3000;
 
