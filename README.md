@@ -14,3 +14,5 @@ Some useful link to get you started with socket.io:
 - [Socket.io Documentation](https://socket.io/docs/v3/index.html)
 - [Socket.io Github Repo](https://github.com/socketio/socket.io)
 
+#### For any other query
+- [Discord channel link](https://discord.gg/YnJRMPRjHR)
