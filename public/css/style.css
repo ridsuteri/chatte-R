@@ -24,6 +24,8 @@ body {
   font-size: 16px;
   background: var(--light-color);
   margin: 20px;
+  background-image: url(https://i.pinimg.com/originals/e9/58/d6/e958d6b0e20e9e2a1468fdb6765ba44b.jpg);
+  background-position: center;
 }
 
 ul {
