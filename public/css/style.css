@@ -24,6 +24,8 @@ body {
   font-size: 16px;
   background: var(--light-color);
   margin: 20px;
+  background-image: url(https://i.pinimg.com/originals/e9/58/d6/e958d6b0e20e9e2a1468fdb6765ba44b.jpg);
+  background-position: center;
 }
 
 ul {
@@ -41,6 +43,57 @@ a {
   color: var(--theme-color-1);
   border: 0;
   font-size: 17px;
+  transition: all 0.5s;
+}
+
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover {
+  background-color: #669999;
+  color: var(--light-color);
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button {
+  cursor: pointer;
+  padding: 5px 15px;
+  background: var(--light-color);
+  color: var(--theme-color-1);
+  border: 0;
+  font-size: 17px;
+  transition: all 0.5s;
+  border-radius: 15px;
+}
+
+.button:hover {
+  background-color: #006080;
+  color: var(--light-color);
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 /* Chat Page */
@@ -193,3 +246,6 @@ a {
     display: none;
   }
 }
+
+
+
