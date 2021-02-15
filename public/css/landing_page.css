@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.home{
+    height: 100vh;
+    width: 100%;
+    background: rgb(182, 79, 79);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.home video{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    object-fit: cover;
+    mix-blend-mode: overlay;
+}
+.home .caption{
+    position: relative;
+    z-index: 20;
+    color: rgb(49, 0, 0);
+    /* color: whitesmoke; */
+    margin: 0 2px 0 2px;
+    text-align: center;
+}
+
+.home .texture{
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    position: absolute;
+    z-index: 5;
+    background:url(../video/texture3.png) ;
+}
+
+.caption h1{
+    position: relative;
+    font-size: 80px;
+    color: transparent;
+    text-transform: uppercase;
+}
+
+.caption h1::before{
+    content: attr(data-text);
+    position: absolute;
+    top:0;
+    left:0;
+    width:0;
+    height: 100%;
+    color: white;
+    /* color: rgb(49, 0, 0); */
+    -webkit-text-stroke: 0vw transparent;
+    border-right: 4px solid white;
+    overflow: hidden;
+    animation: animate 4s linear infinite;
+}
+
+.caption .btn{
+    width: 120px;
+    height: 40px;
+    background: linear-gradient(to bottom right, #ff9999 0%, #cc0000 100%);
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: rgb(49, 0, 0);
+    border-width: 0;
+}
+.caption p{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: cursive;
+}
+.caption .btn:hover{
+   transform: scaleY(1.1);
+}
+.caption a{
+    text-decoration: none;
+    /* color: rgb(49, 0, 0); */
+    color: whitesmoke;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+@keyframes animate{
+    0%,10%,100%{
+        width:0;
+    }
+    70%,90%{
+        width:100%;
+    }
+}
+
+@media screen and (max-width: 490px){
+    .caption h1{
+        font-size: 50px;
+    }
+    .caption h3, .caption p{
+        font-size: 20px;
+    }
+}
