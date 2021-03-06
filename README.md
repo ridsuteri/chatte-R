@@ -18,3 +18,12 @@ Some useful link to get you started with socket.io:
 
 #### For any other query
 - [Discord channel link](https://discord.gg/YnJRMPRjHR)
+
+## Project Maintainer 
+
+<table>
+  <tbody><tr>
+    <td align="center"><a href="https://github.com/ridsuteri"><img alt="" src="https://avatars.githubusercontent.com/u/59795822?s=400&u=1fa374b540093e1d23cf4504a564f532bde0baa1&v=4" width="130px;"><br><sub><b>
+ Riddhi Suteri </b></sub></a><br><a href="" title="Code">💻 </a></td></a></td>
+  </tr>
+</tbody></table>
