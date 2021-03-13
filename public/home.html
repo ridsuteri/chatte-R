@@ -13,6 +13,9 @@
 </head>
 
 <body>
+	<!-- pre-loader -->
+    <div id="loading"></div>
+
 	<div class="join-container">
 		<header class="join-header">
 			<h1><i class="fas fa-comment-dots"></i> Chatte-R</h1>
@@ -38,6 +41,14 @@
 			</form>
 		</main>
 	</div>
+
+	<!-- pre-loader -->
+	<script>
+        window.onload=function(){
+            document.getElementById('loading').style.display="none";
+            document.getElementById('body').style.display="block";
+          }
+    </script>
 </body>
 
 </html>

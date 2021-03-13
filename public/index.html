@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../public/images/favicon.png" type="image/png">
     <link rel="stylesheet" href="./css/landing_page.css">
-    <title>Landing page| chatte R</title>
+    <title>Landing page | chatte R</title>
 </head>
 <body>
+    <!-- pre-loader -->
+    <div id="loading"></div>
+
     <div class="home">
         <video src="./video/santa.mp4" loop muted autoplay preload="auto"></video>
     <div class="caption">
@@ -24,5 +27,13 @@
     </div>
     <div class="texture"></div>
     </div>
+
+    <!-- pre-loader -->
+    <script>
+        window.onload=function(){
+            document.getElementById('loading').style.display="none";
+            document.getElementById('body').style.display="block";
+          }
+    </script>
 </body>
 </html>

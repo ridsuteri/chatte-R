@@ -4,6 +4,16 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* pre-loader */
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff url('https://cdn.dribbble.com/users/63485/screenshots/2319093/chatstack_logo_preloader.gif') no-repeat center;
+    z-index: 999;
+}
+
 .home{
     height: 100vh;
     width: 100%;
