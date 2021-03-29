@@ -49,6 +49,9 @@ Some useful link to get you started with socket.io:
  
  <td align="center"><a href="https://github.com/pranabprohit"><img alt="" src="https://avatars.githubusercontent.com/u/53513600?s=400&v=4" width="100px;"><br><sub><b>
  Pranab Purohit </b></sub></a><br><a href="" title="Code">💻 </a></td></a></td>
+ 
+ <td align="center"><a href="https://github.com/kanak22"><img alt="" src="https://github.com/kanak22.png?size=400" width="100px;"><br><sub><b>
+ kanak </b></sub></a><br><a href="" title="Code">💻 </a></td></a></td>
   </tr>
 </tbody></table>
 
